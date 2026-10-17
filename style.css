@@ -1,0 +1,20 @@
+
+/* Paso 4 */
+body p {
+    color: green;
+}
+
+/* Paso 2 */
+body {
+    color: white !important;
+}
+
+/* Paso 3 */
+p {
+    color: blue;
+}
+
+/* Paso 1 */
+body {
+    color: red;
+}
