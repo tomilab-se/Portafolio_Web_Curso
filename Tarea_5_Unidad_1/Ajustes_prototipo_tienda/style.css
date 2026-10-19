@@ -1,0 +1,67 @@
+
+/* 1. Diagramación de tres filas con display flex */
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 2. Diagramación en columnas */
+#contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Productos destacados (2 columnas - 50%) */
+#destacados .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 50%;
+}
+
+/* 4. Ofertas (3 columnas - 33.3%) */
+#ofertas .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 33.3%;
+}
+
+/* 5. Disponible (4 columnas - 25% y borde coral) */
+#disponible .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 5px coral;
+  background-color: white;
+  width: 25%;
+}
+/* --- Efectos de sombras para la Tienda --- */
+
+/* 1. Agrega un selector para el titulo de destacados y colocale sombra a ese titulo con text-shadow: 0 0 3px white; */
+#destacados h2, #destacados h1 {
+  text-shadow: 0 0 3px white;
+}
+
+/* 2. Agrega un estilo de sombra de caja simple a los productos con ofertas con box-shadow: 4px 0px; */
+#ofertas .contenedor > div {
+  box-shadow: 4px 0px;
+}
+
+/* 3. Agrega un estilo de sombra de caja con color especifico a los productos disponibles con box-shadow: 4px 0px #D46A6A; */
+#disponible .contenedor > div {
+  box-shadow: 4px 0px #D46A6A;
+}
+
+/* 4. Agrega doble sombra al titulo de las ofertas con text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A; margin-bottom: 5px; */
+#ofertas h2, #ofertas h1 {
+  text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+  margin-bottom: 5px;
+}
+
+/* 5. Agrega un estilo avanzado de sombra a los productos destacados con box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3); */
+#destacados .contenedor > div {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3);
+}

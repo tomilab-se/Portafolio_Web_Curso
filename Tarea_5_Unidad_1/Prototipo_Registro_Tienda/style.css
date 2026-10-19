@@ -1,0 +1,40 @@
+
+/* 1. Diagramación de tres filas con display flex */
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 2. Diagramación en columnas */
+#contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Productos destacados (2 columnas - 50%) */
+#destacados .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 50%;
+}
+
+/* 4. Ofertas (3 columnas - 33.3%) */
+#ofertas .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 33.3%;
+}
+
+/* 5. Disponible (4 columnas - 25% y borde coral) */
+#disponible .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 5px coral;
+  background-color: white;
+  width: 25%;
+}
